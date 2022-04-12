@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  /***************************************************************/
+  /******************** Familias Tipograficas ********************/
+  /***************************************************************/
+
+  /* Tamaño de fuente */
+  --font-size-9xl: 4.8rem;
+  --font-size-8xl: 4.4rem;
+  --font-size-7xl: 4rem;
+  --font-size-6xl: 3.6rem;
+  --font-size-5xl: 3.2rem;
+  --font-size-4xl: 2.8rem;
+  --font-size-3xl: 2.4rem;
+  --font-size-2xl: 2rem;
+  --font-size-xl: 1.8rem;
+  --font-size-lg: 1.6rem;
+  --font-size-md: 1.4rem;
+  --font-size-sm: 1.2rem;
+  --font-size-xs: 1rem;
+
+  /* Familia de fuente */
+  --text-font-family: "Poppins", sans-serif;
+  --text-line-height: 1.5;
+  --text-font-size: var(--font-size-md);
+  --text-font-weight: 400;
+  
+  --title-font-family: "Poppins", sans-serif;
+  --title-line-height: 1.2;
+  --title-font-weight: 500;
+
+  /************************************************************/
+  /******************** Paletas de colores ********************/
+  /************************************************************/
+
+  --white: #ffffff;
+  --black: #181717;
+
+  /* France */
+  --france-50: #eaf4fd;
+  --france-100: #d5e8fa;
+  --france-200: #acd1f5;
+  --france-300: #82bbf1;
+  --france-400: #59a4ec;
+  --france-500: #2f8de7;
+  --france-600: #2a7fd0;
+  --france-700: #2671b9;
+  --france-800: #2163a2;
+  --france-900: #1c558b;
+  --france\/20: #2f8de733;
+  --france\/40: #2f8de766;
+  --france\/60: #2f8de799;
+  --france\/80: #2f8de7cc;
+
+  /* Sky */
+  --sky-50: #f0f9ff;
+  --sky-100: #e0f2fe;
+  --sky-200: #bae6fd;
+  --sky-300: #7dd3fc;
+  --sky-400: #38bdf8;
+  --sky-500: #0ea5e9;
+  --sky-600: #0284c7;
+  --sky-700: #0369a1;
+  --sky-800: #075985;
+  --sky-900: #0c4a6e;
+  --sky\/20: #0ea5e933;
+  --sky\/40: #0ea5e966;
+  --sky\/60: #0ea5e999;
+  --sky\/80: #0ea5e9cc;
+
+  /* Cyan */
+  --cyan-50: #ecfeff;
+  --cyan-100: #cffafe;
+  --cyan-200: #a5f3fc;
+  --cyan-300: #67e8f9;
+  --cyan-400: #22d3ee;
+  --cyan-500: #06b6d4;
+  --cyan-600: #0891b2;
+  --cyan-700: #0e7490;
+  --cyan-800: #155e75;
+  --cyan-900: #164e63;
+  --cyan\/20: #06b6d433;
+  --cyan\/40: #06b6d466;
+  --cyan\/60: #06b6d499;
+  --cyan\/80: #06b6d4cc;
+
+  /* Esmerald */
+  --esmerald-50: #ecfdf5;
+  --esmerald-100: #d1fae5;
+  --esmerald-200: #a7f3d0;
+  --esmerald-300: #6ee7b7;
+  --esmerald-400: #34d399;
+  --esmerald-500: #10b981;
+  --esmerald-600: #059669;
+  --esmerald-700: #047857;
+  --esmerald-800: #065f46;
+  --esmerald-900: #064e3b;
+  --esmerald\/20: #10b98133;
+  --esmerald\/40: #10b98166;
+  --esmerald\/60: #10b98199;
+  --esmerald\/80: #10b981cc;
+
+  /* Green */
+  --green-50: #eefaef;
+  --green-100: #ddf4de;
+  --green-200: #bae9bd;
+  --green-300: #98de9d;
+  --green-400: #75d37c;
+  --green-500: #53c85b;
+  --green-600: #4bb452;
+  --green-700: #42a049;
+  --green-800: #3a8c40;
+  --green-900: #327837;
+  --green\/20: #53c85b33;
+  --green\/40: #53c85b66;
+  --green\/60: #53c85b99;
+  --green\/80: #53c85bcc;
+
+  /* Lime */
+  --lime-50: #f7fee7;
+  --lime-100: #ecfccb;
+  --lime-200: #d9f99d;
+  --lime-300: #bef264;
+  --lime-400: #a3e635;
+  --lime-500: #84cc16;
+  --lime-600: #65a30d;
+  --lime-700: #4d7c0f;
+  --lime-800: #3f6212;
+  --lime-900: #365314;
+  --lime\/20: #84cc1633;
+  --lime\/40: #84cc1666;
+  --lime\/60: #84cc1699;
+  --lime\/80: #84cc16cc;
+
+  /* Amber */
+  --amber-50: #fffbeb;
+  --amber-100: #fef3c7;
+  --amber-200: #fde68a;
+  --amber-300: #fcd34d;
+  --amber-400: #fbbf24;
+  --amber-500: #f59e0b;
+  --amber-600: #d97706;
+  --amber-700: #b45309;
+  --amber-800: #92400e;
+  --amber-900: #78350f;
+  --amber\/20: #f59e0b33;
+  --amber\/40: #f59e0b66;
+  --amber\/60: #f59e0b99;
+  --amber\/80: #f59e0bcc;
+
+  /* Red */
+  --red-50: #fef2f2;
+  --red-100: #fee2e2;
+  --red-200: #fecaca;
+  --red-300: #fca5a5;
+  --red-400: #f87171;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --red-700: #b91c1c;
+  --red-800: #991b1b;
+  --red-900: #7f1d1d;
+  --red\/20: #ef444433;
+  --red\/40: #ef444466;
+  --red\/60: #ef444499;
+  --red\/80: #ef4444cc;
+
+  /* Bermellon */
+  --bermellon-50: #fbefee;
+  --bermellon-100: #f7dedc;
+  --bermellon-200: #f0beba;
+  --bermellon-300: #e89d97;
+  --bermellon-400: #e17d75;
+  --bermellon-500: #d95c52;
+  --bermellon-600: #c3534a;
+  --bermellon-700: #ae4a42;
+  --bermellon-800: #984039;
+  --bermellon-900: #823731;
+  --bermellon\/20: #d95c5233;
+  --bermellon\/40: #d95c5266;
+  --bermellon\/60: #d95c5299;
+  --bermellon\/80: #d95c52cc;
+
+  /* Violet */
+  --violet-50: #eeeaef;
+  --violet-100: #ded6df;
+  --violet-200: #bcadbf;
+  --violet-300: #9b839f;
+  --violet-400: #795a7f;
+  --violet-500: #58315f;
+  --violet-600: #4f2c56;
+  --violet-700: #46274c;
+  --violet-800: #3e2243;
+  --violet-900: #351d39;
+  --violet\/20: #58315f33;
+  --violet\/40: #58315f66;
+  --violet\/60: #58315f99;
+  --violet\/80: #58315fcc;
+
+  /* Purple */
+  --purple-50: #faf5ff;
+  --purple-100: #f3e8ff;
+  --purple-200: #e9d5ff;
+  --purple-300: #d8b4fe;
+  --purple-400: #c084fc;
+  --purple-500: #a14cf6;
+  --purple-600: #9333ea;
+  --purple-700: #7e22ce;
+  --purple-800: #6b21a8;
+  --purple-900: #581c87;
+  --purple\/20: #a14cf633;
+  --purple\/40: #a14cf666;
+  --purple\/60: #a14cf699;
+  --purple\/80: #a14cf6cc;
+
+  /* Zinc */
+  --zinc-50: #f4f4f5;
+  --zinc-100: #eaeaeb;
+  --zinc-200: #d5d5d7;
+  --zinc-300: #bfbfc2;
+  --zinc-400: #aaaaae;
+  --zinc-500: #95959a;
+  --zinc-600: #86868b;
+  --zinc-700: #77777b;
+  --zinc-800: #68686c;
+  --zinc-900: #59595c;
+  --zinc\/20: #95959a33;
+  --zinc\/40: #95959a66;
+  --zinc\/60: #95959a99;
+  --zinc\/80: #95959acc;
+
+  /* Neutral */
+  --neutral-50: #fafafa;
+  --neutral-100: #e8e8e8;
+  --neutral-200: #d2d2d2;
+  --neutral-300: #bbbbbb;
+  --neutral-400: #a5a5a5;
+  --neutral-500: #8e8e8e;
+  --neutral-600: #808080;
+  --neutral-700: #727272;
+  --neutral-800: #636363;
+  --neutral-900: #555555;
+  --neutral\/20: #8e8e8e33;
+  --neutral\/40: #8e8e8e66;
+  --neutral\/60: #8e8e8e99;
+  --neutral\/80: #8e8e8ecc;
+
+  /* Iron Gray */
+  --gray-iron-50: #f0f2f4;
+  --gray-iron-100: #e1e4e8;
+  --gray-iron-200: #c3cad1;
+  --gray-iron-300: #a4afbb;
+  --gray-iron-400: #8695a4;
+  --gray-iron-500: #687a8d;
+  --gray-iron-600: #536271;
+  --gray-iron-700: #3e4955;
+  --gray-iron-800: #343d47;
+  --gray-iron-900: #2a3138;
+  --gray-iron\/20: #90a0ae33;
+  --gray-iron\/40: #90a0ae66;
+  --gray-iron\/60: #90a0ae99;
+  --gray-iron\/80: #90a0aecc;
+
+  /*************************************************************/
+  /******************** Variables Generales ********************/
+  /*************************************************************/
+
+  --border-radius: 0.6rem;
+
+}
+
+@media (min-width: 992px) {
+  :root {
+    /* Tamaño de fuente */
+    --font-size-9xl: 6.8rem;
+    --font-size-8xl: 6.2rem;
+    --font-size-7xl: 5.6rem;
+    --font-size-6xl: 5rem;
+    --font-size-5xl: 4.4rem;
+    --font-size-4xl: 3.8rem;
+    --font-size-3xl: 3.2rem;
+    --font-size-2xl: 2.6rem;
+    --font-size-xl: 2rem;
+    --font-size-lg: 1.8rem;
+    --font-size-md: 1.6rem;
+    --font-size-sm: 1.4rem;
+    --font-size-xs: 1.2rem;
+  }
+}
