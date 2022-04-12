@@ -11,3 +11,19 @@
 /*************************************************/
 @import url(css/basics/list-group.css);
 @import url(css/navigation/button.css);
+
+
+/*************************************************/
+/******************* UTILITIES *******************/
+/*************************************************/
+@import url(css/utilities/color.css);
+@import url(css/utilities/container.css);
+@import url(css/utilities/display.css);
+@import url(css/utilities/fonts.css);
+@import url(css/utilities/margin.css);
+@import url(css/utilities/opacity.css);
+@import url(css/utilities/overflow.css);
+@import url(css/utilities/padding.css);
+@import url(css/utilities/position.css);
+@import url(css/utilities/sizing.css);
+@import url(css/utilities/z-index.css);
