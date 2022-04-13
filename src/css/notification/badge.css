@@ -1,0 +1,50 @@
+.badge{
+    position: relative;
+    display: inline-block;
+    padding: .5rem;
+}
+.badge__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: var(--font-size-xs);
+    color: var(--france-50);
+    background-color: var(--france-500);
+    padding: .4em;
+    height: 2rem;
+
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+.badge__top-left{
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.badge__top-right{
+    position: absolute;
+    right:0;   
+    top:0;
+
+}
+.badge__bottom-left{
+    position: absolute;
+    left: 0;
+    bottom:0;
+}
+.badge__bottom-right{
+    position: absolute;
+    right: 0;
+    bottom:0;
+}
+.badge--point{
+    padding: 0;
+}
+.badge__content--point{
+    /* color: transparent; */
+    height: 1.2rem;
+    width: 1.2rem;
+    border: .1rem solid;
+    border-color: currentColor;
+}
