@@ -1,0 +1,122 @@
+.alert{
+    position: relative;
+
+    background-color: var(--zinc-50);
+    color: var(--neutral-600);
+    padding: .85715em 1.7143em;
+    border-radius: var(--border-radius);
+
+    display: flex;
+    gap: .6rem;
+    border: 1px solid transparent;
+    
+    overflow: hidden;
+}
+.alert__closed{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    background-color: transparent;
+    height: 2rem;
+    opacity: .75;
+    
+    transition: opacity .3s;
+}
+.alert__closed:hover{
+    opacity: 1;
+}
+.alert__body{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.alert__header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.2rem;
+    width: 100%;
+    font-weight: 500;
+}
+.alert__title{
+    flex-grow: 1;
+}
+.alert__content{
+    font-family: var(--title-font-family);
+    flex-grow: 1;
+    width: 100%;
+}
+.alert--s{
+    background-color: var(--france-500);
+    color: var(--france-50);
+}
+.alert--o{
+    background-color: var(--france-50);
+    color: var(--france-500);
+    border-color: var(--france-300);
+}
+.alert--g{
+    background-color: var(--neutral-50);
+    color: var(--france-500);
+    border-color: var(--france-300);
+}
+
+.alert--callout{
+    display: flex;
+    gap: 1.2rem;
+}
+.alert--callout::before{
+    content: '';
+    position: relative;
+    min-width: 5px;
+    border-radius: var(--border-radius);
+    bottom: 0;
+    top: 0;
+    background-color: currentColor;
+}
+
+.alert--toast{
+    padding: 0;
+}
+.alert--toast .alert__body{
+    gap: 0;
+}
+.alert--toast .alert__header{
+    padding: .75em 1.175em;
+}
+.alert--toast .alert__content{
+    padding: .75em 1.175em;
+}
+
+
+
+.alert--toast.alert--s .alert__header{
+    background-color: var(--france-500);
+    color: var(--france-50);
+}
+.alert--toast.alert--s .alert__content{
+    background-color: var(--france-400);
+    color: var(--france-50);
+}
+.alert--toast.alert--o .alert__header{
+    background-color: var(--france-100);
+    color: var(--france-500);
+}
+.alert--toast.alert--o .alert__content{
+    background-color: var(--france-50);
+    color: var(--france-500);
+}
+.alert--toast.alert--g .alert__header{
+    background-color: var(--france-100);
+    color: var(--france-500);
+}
+.alert--toast.alert--g .alert__content{
+    background-color: var(--neutral-50);
+    color: var(--france-500);
+}
