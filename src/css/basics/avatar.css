@@ -1,0 +1,24 @@
+.avatar{
+    display: flex;
+}
+.avatar__content{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: .2rem solid var(--france-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--france-500);
+    color: var(--france-50);
+    font-size: var(--font-size-sm);
+}
+.avatar--group > .avatar__content{
+    margin-left: -1.2rem;
+}
+.avatar--group > .avatar__content:first-child{
+    margin-left: 0;
+}
+.avatar--rect > .avatar__content{
+    border-radius: var(--border-radius);
+}
