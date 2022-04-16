@@ -1,0 +1,41 @@
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 10px;
+  }
+  body {
+    font-family: var(--text-font-family);
+    font-size: var(--text-font-size);
+    font-weight: var(--text-font-weight);
+    line-height: var(--text-line-height);
+  
+    scroll-behavior: smooth;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-family: var(--title-font-family);
+    font-weight: var(--title-font-weight);
+    line-height: var(--title-line-height);
+  }
+  ul,
+  ol{
+      margin: 0;
+      padding-left: 0;
+      list-style: none;
+  }
+  a{
+      text-decoration: none;
+  }
+  figure, p, code, article{
+    margin: 0;
+  }
