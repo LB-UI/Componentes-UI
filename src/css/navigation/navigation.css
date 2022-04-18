@@ -1,0 +1,26 @@
+.navigation, .navigation__pages {
+   display: flex;
+   gap: 1.2em;
+   line-height: var(--text-base-line-height);
+}
+
+.navigation__btn {
+	--trans: .3s;
+
+   min-width: 2.25em;
+   min-height: 2.25em;
+	padding: .375em 0.75em;
+	border-radius: var(--border-radius);
+   border: none;
+	font-size: 1.6rem;	
+
+	color: var(--france-50);
+   cursor: pointer;
+	background-color: var(--france-500);
+
+	transition: opacity var(--trans), background-color var(--trans);
+}
+
+.navigation__btn:hover {
+   background-color: var(--france-700);
+}
