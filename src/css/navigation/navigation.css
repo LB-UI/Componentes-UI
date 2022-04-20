@@ -16,11 +16,29 @@
 
 	color: var(--france-50);
    cursor: pointer;
-	background-color: var(--france-500);
-
+   
 	transition: opacity var(--trans), background-color var(--trans);
 }
 
-.navigation__btn:hover {
-   background-color: var(--france-700);
+.navigation--s .navigation__btn {
+   background-color: var(--france-500);
+}
+
+.navigation--s .navigation__btn:hover {
+	background-color: var(--france-700);
+}
+
+.navigation--l .navigation__btn,
+.navigation--o .navigation__btn {
+   background-color: transparent;
+	color: var(--france-500);
+}
+
+.navigation--o .navigation__btn {
+	border: 1px solid var(--france-500);
+}
+
+.navigation--l .navigation__btn:hover,
+.navigation--o .navigation__btn:hover {
+	background-color: var(--france\/20);
 }
