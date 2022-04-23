@@ -29,13 +29,3 @@
 .breadcrumb__link--active{
     opacity: 1;
 }
-
-.breadcrumb--collapsed .breadcrumb__item{
-    display: none;
-}
-
-.breadcrumb--collapsed .breadcrumb__item:first-child,
-.breadcrumb--collapsed .breadcrumb__item:nth-last-child(2),
-.breadcrumb--collapsed .breadcrumb__item:last-child{
-    display: flex;
-}
