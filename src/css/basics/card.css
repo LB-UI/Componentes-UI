@@ -85,6 +85,8 @@
    height: 7.5em;
    border-radius: var(--border-radius) var(--border-radius) 0 0;
    background-image: url(../../assets/photo.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
    background-position: center;
    position: relative;
 }
