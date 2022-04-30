@@ -3,6 +3,7 @@
    width: 100%;
    font-size: var(--font-size-lg);
    border-radius: var(--border-radius);
+   border: 1px solid var(--neutral-100);
 
    background-color: var(--white);
    color: var(--neutral-500);
@@ -89,6 +90,10 @@
    background-size: cover;
    background-position: center;
    position: relative;
+}
+
+.card__country-flag {
+   width: 2rem; height: 2rem;
 }
 
 .card__avatar {
