@@ -36,6 +36,7 @@
 
   --white: #ffffff;
   --black: #181717;
+  --transparent: transparent;
 
   /* France */
   --france-50: #eaf4fd;
@@ -48,26 +49,11 @@
   --france-700: #2671b9;
   --france-800: #2163a2;
   --france-900: #1c558b;
+
   --france\/20: #2f8de733;
   --france\/40: #2f8de766;
   --france\/60: #2f8de799;
   --france\/80: #2f8de7cc;
-
-  /* Sky */
-  --sky-50: #f0f9ff;
-  --sky-100: #e0f2fe;
-  --sky-200: #bae6fd;
-  --sky-300: #7dd3fc;
-  --sky-400: #38bdf8;
-  --sky-500: #0ea5e9;
-  --sky-600: #0284c7;
-  --sky-700: #0369a1;
-  --sky-800: #075985;
-  --sky-900: #0c4a6e;
-  --sky\/20: #0ea5e933;
-  --sky\/40: #0ea5e966;
-  --sky\/60: #0ea5e999;
-  --sky\/80: #0ea5e9cc;
 
   /* Cyan */
   --cyan-50: #ecfeff;
@@ -85,21 +71,6 @@
   --cyan\/60: #06b6d499;
   --cyan\/80: #06b6d4cc;
 
-  /* Esmerald */
-  --esmerald-50: #ecfdf5;
-  --esmerald-100: #d1fae5;
-  --esmerald-200: #a7f3d0;
-  --esmerald-300: #6ee7b7;
-  --esmerald-400: #34d399;
-  --esmerald-500: #10b981;
-  --esmerald-600: #059669;
-  --esmerald-700: #047857;
-  --esmerald-800: #065f46;
-  --esmerald-900: #064e3b;
-  --esmerald\/20: #10b98133;
-  --esmerald\/40: #10b98166;
-  --esmerald\/60: #10b98199;
-  --esmerald\/80: #10b981cc;
 
   /* Green */
   --green-50: #eefaef;
@@ -117,21 +88,6 @@
   --green\/60: #53c85b99;
   --green\/80: #53c85bcc;
 
-  /* Lime */
-  --lime-50: #f7fee7;
-  --lime-100: #ecfccb;
-  --lime-200: #d9f99d;
-  --lime-300: #bef264;
-  --lime-400: #a3e635;
-  --lime-500: #84cc16;
-  --lime-600: #65a30d;
-  --lime-700: #4d7c0f;
-  --lime-800: #3f6212;
-  --lime-900: #365314;
-  --lime\/20: #84cc1633;
-  --lime\/40: #84cc1666;
-  --lime\/60: #84cc1699;
-  --lime\/80: #84cc16cc;
 
   /* Amber */
   --amber-50: #fffbeb;
@@ -149,21 +105,6 @@
   --amber\/60: #f59e0b99;
   --amber\/80: #f59e0bcc;
 
-  /* Red */
-  --red-50: #fef2f2;
-  --red-100: #fee2e2;
-  --red-200: #fecaca;
-  --red-300: #fca5a5;
-  --red-400: #f87171;
-  --red-500: #ef4444;
-  --red-600: #dc2626;
-  --red-700: #b91c1c;
-  --red-800: #991b1b;
-  --red-900: #7f1d1d;
-  --red\/20: #ef444433;
-  --red\/40: #ef444466;
-  --red\/60: #ef444499;
-  --red\/80: #ef4444cc;
 
   /* Bermellon */
   --bermellon-50: #fbefee;
@@ -180,54 +121,6 @@
   --bermellon\/40: #d95c5266;
   --bermellon\/60: #d95c5299;
   --bermellon\/80: #d95c52cc;
-
-  /* Violet */
-  --violet-50: #eeeaef;
-  --violet-100: #ded6df;
-  --violet-200: #bcadbf;
-  --violet-300: #9b839f;
-  --violet-400: #795a7f;
-  --violet-500: #58315f;
-  --violet-600: #4f2c56;
-  --violet-700: #46274c;
-  --violet-800: #3e2243;
-  --violet-900: #351d39;
-  --violet\/20: #58315f33;
-  --violet\/40: #58315f66;
-  --violet\/60: #58315f99;
-  --violet\/80: #58315fcc;
-
-  /* Purple */
-  --purple-50: #faf5ff;
-  --purple-100: #f3e8ff;
-  --purple-200: #e9d5ff;
-  --purple-300: #d8b4fe;
-  --purple-400: #c084fc;
-  --purple-500: #a14cf6;
-  --purple-600: #9333ea;
-  --purple-700: #7e22ce;
-  --purple-800: #6b21a8;
-  --purple-900: #581c87;
-  --purple\/20: #a14cf633;
-  --purple\/40: #a14cf666;
-  --purple\/60: #a14cf699;
-  --purple\/80: #a14cf6cc;
-
-  /* Zinc */
-  --zinc-50: #f4f4f5;
-  --zinc-100: #eaeaeb;
-  --zinc-200: #d5d5d7;
-  --zinc-300: #bfbfc2;
-  --zinc-400: #aaaaae;
-  --zinc-500: #95959a;
-  --zinc-600: #86868b;
-  --zinc-700: #77777b;
-  --zinc-800: #68686c;
-  --zinc-900: #59595c;
-  --zinc\/20: #95959a33;
-  --zinc\/40: #95959a66;
-  --zinc\/60: #95959a99;
-  --zinc\/80: #95959acc;
 
   /* Neutral */
   --neutral-50: #fafafa;
