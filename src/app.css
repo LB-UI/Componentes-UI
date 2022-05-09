@@ -18,6 +18,10 @@
 @import url(css/notification/tag.css);
 @import url(css/navigation/navigation.css);
 @import url(css/basics/card.css);
+@import url(css/basics/accordion.css);
+@import url(css/basics/popover.css);
+@import url(css/basics/modal.css);
+@import url(css/basics/timeline.css);
 
 /*************************************************/
 /******************* UTILITIES *******************/

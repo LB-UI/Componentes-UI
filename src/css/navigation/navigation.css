@@ -12,7 +12,7 @@
 	padding: .375em 0.75em;
 	border-radius: var(--border-radius);
    border: none;
-	font-size: 1.6rem;	
+	font-size: var(--font-size-md);	
 
 	color: var(--france-50);
    cursor: pointer;
