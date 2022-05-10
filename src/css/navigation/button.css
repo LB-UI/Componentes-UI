@@ -1,7 +1,4 @@
 .btn {
-	/* Variables */
-	--trans: .3s;
-	
 	width: max-content;
 	min-width: 9.3125em;
 	min-height: 2.375em;
@@ -23,7 +20,7 @@
 
 	cursor:pointer;
 
-	transition: opacity var(--trans), background-color var(--trans);
+	transition: opacity var(--transition), background-color var(--transition);
 }
 
 .btn--disabled,
@@ -81,7 +78,7 @@
 }
 
 .btn__arrow {
-	transition: transform var(--trans);
+	transition: transform var(--transition);
 }
 
 .btn__arrow--up {
@@ -104,7 +101,7 @@
 	transform: scaleY(0);
 	opacity: 0;
 
-	transition: transform var(--trans), opacity var(--trans);
+	transition: transform var(--transition), opacity var(--transition);
 }
 
 .btn__dropdown--unfolded {
@@ -118,7 +115,7 @@
 	padding: .6rem 1.2rem;
 	color: var(--neutral-600);
 	text-align: left;
-	transition: background-color var(--trans);
+	transition: background-color var(--transition);
 }
 
 .btn__link:active,
