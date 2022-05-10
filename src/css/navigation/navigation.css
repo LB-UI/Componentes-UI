@@ -5,8 +5,6 @@
 }
 
 .navigation__btn {
-	--trans: .3s;
-
    min-width: 2.25em;
    min-height: 2.25em;
 	padding: .375em 0.75em;
@@ -17,7 +15,7 @@
 	color: var(--france-50);
    cursor: pointer;
    
-	transition: opacity var(--trans), background-color var(--trans);
+	transition: opacity var(--transition), background-color var(--transition);
 }
 
 .navigation--s .navigation__btn {

@@ -1,6 +1,4 @@
 .modal {
-   --trans: 0.3s;
-   
    background-color: var(--white);
    border: 1px solid var(--neutral-100);
    border-radius: var(--border-radius);
@@ -36,11 +34,11 @@
    cursor: pointer;
    border-radius: .3rem;
    text-align: center;
-   transition: background-color var(--trans);
+   transition: color var(--transition);
 }
 
 .modal__close-btn:hover {
-   background-color: var(--france-100);
+   color: var(--france-500);
 }
 
 
