@@ -16,6 +16,9 @@
 @import url(css/notification/badge.css);
 @import url(css/navigation/breadcrumb.css);
 @import url(css/notification/tag.css);
+@import url(css/navigation/navigation.css);
+@import url(css/basics/card.css);
+@import url(css/components/sidebar.css);
 
 /*************************************************/
 /******************* UTILITIES *******************/

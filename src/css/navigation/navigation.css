@@ -1,0 +1,44 @@
+.navigation, .navigation__pages {
+   display: flex;
+   gap: 1.2em;
+   line-height: var(--text-base-line-height);
+}
+
+.navigation__btn {
+	--trans: .3s;
+
+   min-width: 2.25em;
+   min-height: 2.25em;
+	padding: .375em 0.75em;
+	border-radius: var(--border-radius);
+   border: none;
+	font-size: 1.6rem;	
+
+	color: var(--france-50);
+   cursor: pointer;
+   
+	transition: opacity var(--trans), background-color var(--trans);
+}
+
+.navigation--s .navigation__btn {
+   background-color: var(--france-500);
+}
+
+.navigation--s .navigation__btn:hover {
+	background-color: var(--france-700);
+}
+
+.navigation--l .navigation__btn,
+.navigation--o .navigation__btn {
+   background-color: transparent;
+	color: var(--france-500);
+}
+
+.navigation--o .navigation__btn {
+	border: 1px solid var(--france-500);
+}
+
+.navigation--l .navigation__btn:hover,
+.navigation--o .navigation__btn:hover {
+	background-color: var(--france\/20);
+}

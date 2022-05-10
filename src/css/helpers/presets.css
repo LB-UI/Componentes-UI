@@ -35,6 +35,7 @@
   }
   a{
       text-decoration: none;
+      -webkit-tap-highlight-color: transparent
   }
   figure, p, code, article{
     margin: 0;

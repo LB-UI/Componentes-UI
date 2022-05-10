@@ -3,10 +3,13 @@
 	--trans: .3s;
 	
 	width: max-content;
+	min-width: 9.3125em;
+	min-height: 2.375em;
+	line-height: var(--text-base-line-height);
 
 	border: none;
 	outline: none;
-	padding: .6em 1.2em;
+	padding: .375em 0.75em;
 	border-radius: var(--border-radius);
 
 	color: var(--france-50);
@@ -14,7 +17,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 1.2em;
+	gap: 0.75em;
 
 	font-size: 1.6rem;	
 
@@ -121,14 +124,6 @@
 .btn__link:active,
 .btn__link:hover {
 	background-color: var(--neutral-100);
-}
-
-/* --- Navigation --- */
-
-.btn--navigation {
-	min-width: 2.5em;
-	min-height: 2.5em;
-	padding: 0;
 }
 
 /* Sizes */
