@@ -1,5 +1,5 @@
 .popover {
-   width: max-content;
+   width: 100%;
    background-color: var(--white);
    border-radius: var(--border-radius);
    color: var(--neutral-500);
