@@ -35,8 +35,18 @@
   }
   a{
       text-decoration: none;
-      -webkit-tap-highlight-color: transparent
+      -webkit-tap-highlight-color: transparent;
+  }
+  a:active,
+  a:hover{
+    color: inherit;
+  }
+  button{
+    -webkit-tap-highlight-color: transparent;
   }
   figure, p, code, article{
     margin: 0;
+  }
+  input:focus{
+    outline: 0;
   }

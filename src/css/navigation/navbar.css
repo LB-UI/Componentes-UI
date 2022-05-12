@@ -1,0 +1,230 @@
+.navbar {
+  --navbar-height: 6rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--neutral-50);
+  height: var(--navbar-height);
+  border-bottom: 1px solid var(--gray-iron-100);
+  font-family: var(--text-font-family);
+}
+.navbar__container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.navbar__brand {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__logo {
+  height: 4rem;
+}
+.navbar__button-navigation {
+  border: 0;
+  width: 3.6rem;
+  height: 3.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--gray-iron-500);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-lg);
+  transition: background-color var(--transition);
+}
+.navbar__button-navigation:hover {
+  background-color: var(--gray-iron-50);
+}
+.navbar__image {
+  height: 100%;
+}
+.navbar__content {
+  position: absolute;
+  top: var(--navbar-height);
+  right: 0;
+  background-color: var(--neutral-50);
+  min-height: calc(100vh - var(--navbar-height));
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+}
+.navbar__utilities {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Search */
+.navbar__search {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  border-radius: 0.6rem;
+  border: 1px solid var(--gray-iron-100);
+  color: var(--gray-iron-600);
+  background-color: var(--neutral-50);
+  overflow: hidden;
+  margin-bottom: 1rem;
+  height: auto;
+  cursor: pointer;
+}
+.navbar__search-icon {
+  font-size: var(--font-size-md);
+  color: var(--neutral-500);
+  background-color: inherit;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__search-input {
+  background-color: inherit;
+  border: 0;
+  padding: 1rem;
+}
+.navbar__input-search::placeholder {
+  color: var(--neutral-200);
+}
+
+/* Avatar */
+.navbar__user {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  padding: 1.2rem 0;
+  column-gap: 1rem;
+  height: auto;
+}
+.navbar__avatar {
+  grid-row: span 2;
+  position: relative;
+  height: 4rem;
+}
+.navbar__username {
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  color: var(--gray-iron-600);
+}
+.navbar__profesion {
+  font-size: var(--font-size-sm);
+  color: var(--gray-iron-500);
+}
+
+.navbar__options{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--neutral-200);
+  border-top: 1px solid var(--neutral-200);
+  padding: 1rem 0;
+  width: 100%;
+}
+.navbar__link,
+.navbar__option{
+  display: flex;
+  padding: 1.2rem 0;
+  gap: 1rem;
+  color: var(--gray-iron-600);
+}
+.navbar__icon,
+.navbar__option-icon{
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__text,
+.navbar__option-text{
+  flex-grow: 1;
+}
+.navbar__option:hover,
+.navbar__link:hover{
+  color: var(--france-600);
+}
+
+
+.navbar__nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .navbar__container{
+    gap: 1.2rem;
+    position: relative;
+  }
+  .navbar__brand {
+    width: auto;
+    justify-content: flex-start;
+  }
+  .navbar__button-navigation {
+    display: none;
+  }
+  .navbar__content {
+    position: unset;
+    top: 0;
+    background-color: var(--neutral-50);
+    min-height: unset;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    max-width: unset;
+    padding: 0;
+  }
+  .navbar__options,
+  .navbar__utilities,
+  .navbar__nav{
+    flex-direction: row;
+  }
+  .navbar__option-text,
+  .navbar__profesion,
+  .navbar__username,
+  .navbar__icon{
+    display: none;
+  }
+  .navbar__user,
+  .navbar__options{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    height: 100%;
+    width: auto;
+  }
+  .navbar__nav{
+    flex-grow: 1;
+    margin-top: 0;
+  }
+  .navbar__link{
+    padding: .6rem;
+  }
+  .navbar__search{
+    margin-bottom: 0;
+  }
+  .navbar__search-input{
+    width: 10rem;
+    transition:  width .6s;
+  }
+  .navbar__search-icon{
+    min-width: 4rem;
+  }
+  .navbar__search-input:focus{
+    width: 20rem;
+  }
+  .navbar__user{
+    order: 1;
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+  }
+  .navbar__option{
+    position: relative;
+    width: 5rem;
+    justify-content: center;
+  }
+}
