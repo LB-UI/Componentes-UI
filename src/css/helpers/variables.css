@@ -21,12 +21,12 @@
   --font-size-xs: 1rem;
 
   /* Familia de fuente */
-  --text-font-family: "Roboto", sans-serif;
+  --text-font-family: "Lato", sans-serif;
   --text-line-height: 1.5;
   --text-font-size: var(--font-size-md);
   --text-font-weight: 400;
   
-  --title-font-family: "Lato", sans-serif;
+  --title-font-family: "Roboto", sans-serif;
   --title-line-height: 1.2;
   --title-font-weight: 500;
 
