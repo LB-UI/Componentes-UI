@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script defer src="./js/components/navbar.js"></script>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
                 <a href="#" class="navbar__logo">
                     <img class="navbar__image" src="./assets/brand.svg" alt="LayBlu Components">
                 </a>
-                <button class="navbar__button-navigation"><i class="fa-solid fa-bars"></i></button>
+                <button class="navbar__button-navigation" id="navbar__button-navigation"><i class="fa-solid fa-bars"></i></button>
             </div>
             <div class="navbar__content">
                 <div class="navbar__utilities">
@@ -41,12 +41,12 @@
                         <a class="navbar__option" href="#">
                             <span class="navbar__option-icon"><i class="fa-solid fa-bell"></i></span>
                             <span class="navbar__option-text">Notificaciones</span>
-                            <span class="badge position-absolute top-0 right-0 bg-bermellon-500">+9</span>
+                            <span class="navbar__badge badge bg-bermellon-500">+9</span>
                         </a>
                         <a class="navbar__option" href="#">
                             <span class="navbar__option-icon"><i class="fa-solid fa-envelope"></i></span>
                             <span class="navbar__option-text">Mensajes</span>
-                            <span class="badge position-absolute top-0 right-0 bg-bermellon-500">+9</span>
+                            <span class="navbar__badge badge bg-bermellon-500">+9</span>
                         </a>
                     </div>
                 </div>

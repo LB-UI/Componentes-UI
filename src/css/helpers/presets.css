@@ -15,6 +15,7 @@
     line-height: var(--text-line-height);
   
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   h1,
   h2,
