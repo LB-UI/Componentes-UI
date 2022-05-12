@@ -19,6 +19,10 @@
 @import url(css/navigation/navigation.css);
 @import url(css/basics/card.css);
 @import url(css/components/sidebar.css);
+@import url(css/basics/accordion.css);
+@import url(css/basics/popover.css);
+@import url(css/basics/modal.css);
+@import url(css/basics/timeline.css);
 
 /*************************************************/
 /******************* UTILITIES *******************/
@@ -34,3 +38,4 @@
 @import url(css/utilities/position.css);
 @import url(css/utilities/sizing.css);
 @import url(css/utilities/z-index.css);
+@import url(css/utilities/flex.css);

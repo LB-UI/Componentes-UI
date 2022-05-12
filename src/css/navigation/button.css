@@ -1,7 +1,4 @@
 .btn {
-	/* Variables */
-	--trans: .3s;
-	
 	width: max-content;
 	min-width: 9.3125em;
 	min-height: 2.375em;
@@ -19,11 +16,11 @@
 	align-items: center;
 	gap: 0.75em;
 
-	font-size: 1.6rem;	
+	font-size: var(--font-size-md);	
 
 	cursor:pointer;
 
-	transition: opacity var(--trans), background-color var(--trans);
+	transition: opacity var(--transition), background-color var(--transition);
 }
 
 .btn--disabled,
@@ -81,7 +78,7 @@
 }
 
 .btn__arrow {
-	transition: transform var(--trans);
+	transition: transform var(--transition);
 }
 
 .btn__arrow--up {
@@ -89,8 +86,8 @@
 }
 
 .btn__dropdown {
-	width: 90%;
-	padding: .6em 0;
+	min-width: 85%;
+	padding: .6rem 0;
 	
 	background-color: var(--white);
 	box-shadow: var(--box-shadow);
@@ -104,7 +101,7 @@
 	transform: scaleY(0);
 	opacity: 0;
 
-	transition: transform var(--trans), opacity var(--trans);
+	transition: transform var(--transition), opacity var(--transition);
 }
 
 .btn__dropdown--unfolded {
@@ -115,10 +112,10 @@
 .btn__link {
 	display: block;
 	width: 100%;
-	padding: .6em 1.2em;
+	padding: .6rem 1.2rem;
 	color: var(--neutral-600);
 	text-align: left;
-	transition: background-color var(--trans);
+	transition: background-color var(--transition);
 }
 
 .btn__link:active,
@@ -128,9 +125,9 @@
 
 /* Sizes */
 .btn--small {
-	font-size: .8em;
+	font-size: .8rem;
 }
 
 .btn--big {
-	font-size: 1.2em;
+	font-size: var(--font-size-xl);
 }

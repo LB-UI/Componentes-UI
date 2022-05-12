@@ -1,0 +1,50 @@
+.f-row {flex-direction: row;}
+.f-column {flex-direction: column;}
+
+.f-wrap {flex-wrap: wrap;}
+.f-nowrap {flex-wrap: nowrap;}
+
+.f-jc\:center {justify-content: center;}
+.f-jc\:around {justify-content: space-around;}
+.f-jc\:between {justify-content: space-between;}
+.f-jc\:start {justify-content: flex-start;}
+.f-jc\:end {justify-content: flex-end;}
+
+.f-ai\:center {align-items: center;}
+.f-ai\:start {align-items: flex-start;}
+.f-ai\:end {align-items: flex-end;}
+
+/* Flex items */
+.f-as\:center {align-items: center;}
+.f-as\:start {align-items: flex-start;}
+.f-as\:end {align-items: flex-end;}
+
+.f-grow\:1 {flex-grow: 1;}
+.f-grow\:2 {flex-grow: 2;}
+.f-grow\:3 {flex-grow: 3;}
+
+.f-shrink\:0 {flex-shrink: 0;}
+.f-shrink\:1 {flex-shrink: 1;}
+.f-shrink\:2 {flex-shrink: 2;}
+.f-shrink\:3 {flex-shrink: 3;}
+
+.f-grow\:1 {flex-grow: 1;}
+.f-grow\:2 {flex-grow: 2;}
+.f-grow\:3 {flex-grow: 3;}
+
+.f-gap\:1 {gap: 1rem;}
+.f-gap\:2 {gap: 2rem;}
+.f-gap\:3 {gap: 3rem;}
+.f-gap\:4 {gap: 4rem;}
+.f-gap\:5 {gap: 5rem;}
+
+.f-order\:1 {order: 1rem}
+.f-order\:2 {order: 2rem}
+.f-order\:3 {order: 3rem}
+.f-order\:4 {order: 4rem}
+.f-order\:5 {order: 5rem}
+
+.f-center {
+   justify-content: center;
+   align-items: center;
+}

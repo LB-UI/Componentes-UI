@@ -1,0 +1,65 @@
+.popover {
+   width: 100%;
+   background-color: var(--white);
+   border-radius: var(--border-radius);
+   color: var(--neutral-500);
+   font-size: var(--font-size-md);
+   position: relative;
+   border: 1px solid var(--gray-iron-200);
+}
+
+.popover__title {
+   padding: .6rem 1.2rem;
+   background-color: var(--gray-iron-200);
+   border-radius: .4rem .4rem 0 0;
+}
+
+.popover__content {
+   padding: 1.2rem;
+   line-height: var(--text-line-height);
+
+   display: flex;
+   flex-direction: column;
+   gap: 1.2rem;
+}
+
+.popover__footer {
+   background-color: var(--gray-iron-200);
+   border-radius: var(--border-radius);
+   padding: .5rem 1rem;
+}
+
+.popover--left::before,
+.popover--right::before,
+.popover--bottom::before,
+.popover--top::before {
+   content: "";
+   width: 1.5rem; height: 1.5rem;
+   position: absolute;
+   background-color: var(--white);
+   border-bottom: 1px solid var(--gray-iron-200);
+   border-left: 1px solid var(--gray-iron-200);
+}
+
+.popover--left::before {
+   bottom: 30%; left: -1px;
+   transform: translateX(-50%) rotate(45deg);
+}
+
+.popover--right::before {
+   bottom: 30%; right: -1.6rem;
+   transform: translateX(-50%) rotate(225deg);
+}
+
+.popover--bottom::before {
+   bottom: -0.9rem; left: 50%;
+   transform: translateX(-50%) rotate(-45deg);
+}
+
+.popover--top::before {
+   top: -0.9rem; left: 50%;
+   transform: translateX(-50%) rotate(-45deg);
+   background-color: var(--gray-iron-200);
+   border: none;
+}
+
