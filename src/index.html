@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,70 @@
     <title>LayBlu UI</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./js/components/navbar.js"></script>
 </head>
-<body class="container mt-50" id="layout">
-    
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container container-fluid">
+            <div class="navbar__brand" href="#">
+                <a href="#" class="navbar__logo">
+                    <img class="navbar__image" src="./assets/brand.svg" alt="LayBlu Components">
+                </a>
+                <button class="navbar__button-navigation" id="navbar__button-navigation"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="navbar__content">
+                <div class="navbar__utilities">
+                    <label class="navbar__search">
+                        <span class="navbar__search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input class="navbar__search-input" placeholder="Buscar..." type="search">
+                    </label>
+                    <a class="navbar__user" href="#">
+                        <div class="navbar__avatar">
+                            <span class="badge badge--point position-absolute bottom-0 right-0 bg-green-500"></span>
+                            <img class="avatar top-0 border-green-300" src="/src/assets/user.jpg" alt="Miguel J Medina">
+                        </div>
+                        <span class="navbar__username">Miguel J Medina</span>
+                        <span class="navbar__profesion">Diseñador UI & Web</span>
+                    </a>
+                    <div class="navbar__options">
+                        <a class="navbar__option" href="#">
+                            <span class="navbar__option-icon"><i class="fa-solid fa-bell"></i></span>
+                            <span class="navbar__option-text">Notificaciones</span>
+                            <span class="navbar__badge badge bg-bermellon-500">+9</span>
+                        </a>
+                        <a class="navbar__option" href="#">
+                            <span class="navbar__option-icon"><i class="fa-solid fa-envelope"></i></span>
+                            <span class="navbar__option-text">Mensajes</span>
+                            <span class="navbar__badge badge bg-bermellon-500">+9</span>
+                        </a>
+                    </div>
+                </div>
+                <ul class="navbar__nav">
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <span class="navbar__icon"><i class="fa-solid fa-gauge"></i></span>
+                            <span class="navbar__text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <span class="navbar__icon"><i class="fa-solid fa-clipboard-list"></i></span>
+                            <span class="navbar__text">Docs</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <span class="navbar__icon"><i class="fa-solid fa-users"></i></span>
+                            <span class="navbar__text">Teams</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </body>
+
 </html>
