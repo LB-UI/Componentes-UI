@@ -11,68 +11,109 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="./js/components/navbar.js"></script>
+    <script defer src="./js/components/sidebar.js"></script>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar__container container-fluid">
-            <div class="navbar__brand" href="#">
-                <a href="#" class="navbar__logo">
-                    <img class="navbar__image" src="./assets/brand.svg" alt="LayBlu Components">
+    <aside class="sidebar sidebar--icon">
+        <a href="./" class="sidebar__header">
+            <img class="sidebar__image" src="./assets/favicon.ico" alt="Logo de LayBlu">
+            <span class="sidebar__brand">LayBlu UI</span>
+        </a>
+
+        <ul class="sidebar__content">
+            <li class="sidebar__item">
+                <label class="sidebar__search">
+                    <span class="sidebar__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input class="sidebar__input" type="search" placeholder="Buscar">  
+                </label>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="./dashboard.html">
+                    <span class="sidebar__icon"><i class="fa-solid fa-gauge"></i></span>
+                    <span class="sidebar__text">Dashboard</span>
                 </a>
-                <button class="navbar__button-navigation" id="navbar__button-navigation"><i class="fa-solid fa-bars"></i></button>
-            </div>
-            <div class="navbar__content">
-                <div class="navbar__utilities">
-                    <label class="navbar__search">
-                        <span class="navbar__search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <input class="navbar__search-input" placeholder="Buscar..." type="search">
-                    </label>
-                    <a class="navbar__user" href="#">
-                        <div class="navbar__avatar">
-                            <span class="badge badge--point position-absolute bottom-0 right-0 bg-green-500"></span>
-                            <img class="avatar top-0 border-green-300" src="/src/assets/user.jpg" alt="Miguel J Medina">
-                        </div>
-                        <span class="navbar__username">Miguel J Medina</span>
-                        <span class="navbar__profesion">Diseñador UI & Web</span>
-                    </a>
-                    <div class="navbar__options">
-                        <a class="navbar__option" href="#">
-                            <span class="navbar__option-icon"><i class="fa-solid fa-bell"></i></span>
-                            <span class="navbar__option-text">Notificaciones</span>
-                            <span class="navbar__badge badge bg-bermellon-500">+9</span>
-                        </a>
-                        <a class="navbar__option" href="#">
-                            <span class="navbar__option-icon"><i class="fa-solid fa-envelope"></i></span>
-                            <span class="navbar__option-text">Mensajes</span>
-                            <span class="navbar__badge badge bg-bermellon-500">+9</span>
-                        </a>
-                    </div>
-                </div>
-                <ul class="navbar__nav">
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">
-                            <span class="navbar__icon"><i class="fa-solid fa-gauge"></i></span>
-                            <span class="navbar__text">Dashboard</span>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="./documentacion.html">
+                    <span class="sidebar__icon"><i class="fa-solid fa-book"></i></span>
+                    <span class="sidebar__text">Documentación</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="./iconos.html">
+                    <span class="sidebar__icon"><i class="fa-solid fa-icons"></i></span>
+                    <span class="sidebar__text">Iconos</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <button class="sidebar__link sidebar__link--dropdown" data-dropdown="show">
+                    <span class="sidebar__icon"><i class="fa-solid fa-cubes"></i></span>
+                    <span class="sidebar__text">Componentes</span>
+                    <span class="sidebar__caret"><i class="fa-solid fa-angle-down"></i></span>
+                </button>
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="./alert.html">
+                            <span class="sidebar__icon sidebar__icon--line"></span>
+                            <span class="sidebar__text">Alert</span>
                         </a>
                     </li>
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">
-                            <span class="navbar__icon"><i class="fa-solid fa-clipboard-list"></i></span>
-                            <span class="navbar__text">Docs</span>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="./avatar.html">
+                            <span class="sidebar__icon sidebar__icon--line"></span>
+                            <span class="sidebar__text">Avatar</span>
                         </a>
                     </li>
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">
-                            <span class="navbar__icon"><i class="fa-solid fa-users"></i></span>
-                            <span class="navbar__text">Teams</span>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="./accordion.html">
+                            <span class="sidebar__icon sidebar__icon--line"></span>
+                            <span class="sidebar__text">Accordion</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="./badge.html">
+                            <span class="sidebar__icon sidebar__icon--line"></span>
+                            <span class="sidebar__text">Badge</span>
                         </a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </nav>
+            </li>
+            <li class="sidebar__item">
+                <button class="sidebar__link sidebar__link--dropdown" data-dropdown="show">
+                    <span class="sidebar__icon"><i class="fa-solid fa-layer-group"></i></span>
+                    <span class="sidebar__text">Librerias</span>
+                    <span class="sidebar__caret"><i class="fa-solid fa-angle-down"></i></span>
+                </button>
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="./alert.html">
+                            <span class="sidebar__icon sidebar__icon--line"></span>
+                            <span class="sidebar__text">CodeMirror</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="./avatar.html">
+                            <span class="sidebar__icon sidebar__icon--line"></span>
+                            <span class="sidebar__text">FullCalendar</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="./accordion.html">
+                            <span class="sidebar__icon sidebar__icon--line"></span>
+                            <span class="sidebar__text">Sortable JS</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="./badge.html">
+                            <span class="sidebar__icon sidebar__icon--line"></span>
+                            <span class="sidebar__text">PDF Maker</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
 </body>
 
 </html>
