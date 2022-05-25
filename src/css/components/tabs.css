@@ -1,0 +1,138 @@
+.tab {
+  max-width: 71.7rem;
+  background-color: var(--white); 
+  border-radius: var(--border-radius);
+  padding: .6rem;
+  color: var(--neutral-500);
+}
+
+.tab a {color: inherit;}
+
+.tab__header {
+  display: flex;
+  position: relative;
+}
+
+.tab__tabs {
+  display: flex;
+  padding: .6rem;
+  overflow: hidden;
+}
+
+.tab__item {
+  border-radius: var(--border-radius);
+  padding: .6rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  transition: color var(--transition);
+}
+
+.tab__item:hover {
+  color: var(--france-500);
+  cursor: pointer;
+}
+
+.tab__item--active {
+  color: var(--france-500);
+  background-color: var(--france\/20);
+}
+
+/* --- Buttons --- */
+.tab__btn {
+  color: var(--neutral-500); 
+  border: none; 
+  outline: none;
+  background-color: var(--white);
+  box-shadow: -10px 0 4px -7px var(--neutral-200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  position: absolute;
+
+  opacity: 0;
+  transform: scale(0);
+}
+
+.tab__btn--visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.tab__btn:hover, .tab__btn:active{
+  background-color: var(--france-50);
+  color: var(--france-500);
+}
+
+
+/* --- End Buttons --- */
+
+
+.tab__body {
+  padding: 2.4rem;
+}
+
+/**** States ******/
+/* Horizontal */
+.tab--h .tab__header {
+  border-bottom: 1px solid var(--neutral-200);
+}
+
+
+.tab--h .tab__btn {
+  width: 2.2rem;
+  height: 100%; 
+  top: 0;
+}
+
+
+.tab--h .tab__backBtn {
+  left: 0;
+} 
+
+.tab--h .tab__nextBtn {
+  right: 0;
+}
+
+.tab--h .tab__backBtn {
+  transform: rotate(180deg);
+}
+
+/* Vertical */
+.tab--v {
+  display: flex;
+}
+
+.tab--v .tab__header {
+  flex-direction: column;
+  border-right: 1px solid var(--neutral-200);
+} 
+
+.tab--v .tab__tabs {
+  min-width: 20.4rem;
+  flex-direction: column;
+  gap: .6rem; 
+}
+
+.tab--v .tab__btn {
+  width: 100%;
+  height: 2.6rem; 
+  right: 0;
+  box-shadow: 0 -10px 4px -7px var(--neutral-200);
+}
+
+.tab--v .tab__backBtn {
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.tab--v .tab__nextBtn {
+  bottom: 0;
+}
+
+.tab--v .tab__ri {
+  transform: rotate(90deg);
+}
+
