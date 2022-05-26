@@ -1,11 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
 
 :root {
-  /***************************************************************/
-  /******************** Familias Tipograficas ********************/
-  /***************************************************************/
-
-  /* Tamaño de fuente */
   --font-size-9xl: 4.8rem;
   --font-size-8xl: 4.4rem;
   --font-size-7xl: 4rem;
@@ -20,7 +15,6 @@
   --font-size-sm: 1.2rem;
   --font-size-xs: 1rem;
 
-  /* Familia de fuente */
   --text-font-family: "Lato", sans-serif;
   --text-line-height: 1.5;
   --text-font-size: var(--font-size-md);
@@ -28,17 +22,12 @@
   
   --title-font-family: "Roboto", sans-serif;
   --title-line-height: 1.2;
-  --title-font-weight: 500;
-
-  /************************************************************/
-  /******************** Paletas de colores ********************/
-  /************************************************************/
+  --title-font-weight: 700;
 
   --white: #ffffff;
   --black: #181717;
   --transparent: transparent;
 
-  /* France */
   --france-50: #eaf4fd;
   --france-100: #d5e8fa;
   --france-200: #acd1f5;
@@ -55,7 +44,6 @@
   --france\/60: #2f8de799;
   --france\/80: #2f8de7cc;
 
-  /* Cyan */
   --cyan-50: #ecfeff;
   --cyan-100: #cffafe;
   --cyan-200: #a5f3fc;
@@ -71,8 +59,6 @@
   --cyan\/60: #06b6d499;
   --cyan\/80: #06b6d4cc;
 
-
-  /* Green */
   --green-50: #eefaef;
   --green-100: #ddf4de;
   --green-200: #bae9bd;
@@ -88,8 +74,6 @@
   --green\/60: #53c85b99;
   --green\/80: #53c85bcc;
 
-
-  /* Amber */
   --amber-50: #fffbeb;
   --amber-100: #fef3c7;
   --amber-200: #fde68a;
@@ -105,8 +89,6 @@
   --amber\/60: #f59e0b99;
   --amber\/80: #f59e0bcc;
 
-
-  /* Bermellon */
   --bermellon-50: #fbefee;
   --bermellon-100: #f7dedc;
   --bermellon-200: #f0beba;
@@ -122,7 +104,6 @@
   --bermellon\/60: #d95c5299;
   --bermellon\/80: #d95c52cc;
 
-  /* Neutral */
   --neutral-50: #fafafa;
   --neutral-100: #e8e8e8;
   --neutral-200: #d2d2d2;
@@ -138,7 +119,6 @@
   --neutral\/60: #8e8e8e99;
   --neutral\/80: #8e8e8ecc;
 
-  /* Iron Gray */
   --gray-iron-50: #f0f2f4;
   --gray-iron-100: #e1e4e8;
   --gray-iron-200: #c3cad1;
@@ -154,10 +134,6 @@
   --gray-iron\/60: #90a0ae99;
   --gray-iron\/80: #90a0aecc;
 
-  /*************************************************************/
-  /******************** Variables Generales ********************/
-  /*************************************************************/
-
   --border-radius: 0.6rem;
   --font-icon: 'FontAwesome';
   --transition: .3s;
@@ -167,7 +143,6 @@
 
 @media (min-width: 992px) {
   :root {
-    /* Tamaño de fuente */
     --font-size-9xl: 6.8rem;
     --font-size-8xl: 6.2rem;
     --font-size-7xl: 5.6rem;

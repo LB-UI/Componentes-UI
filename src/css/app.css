@@ -1,13 +1,6 @@
-/*************************************************/
-/******************** HELPERS ********************/
-/*************************************************/
-@import url(helpers/normalize.css);
 @import url(helpers/variables.css);
 @import url(helpers/presets.css);
 
-/*************************************************/
-/****************** COMPONENTS *******************/
-/*************************************************/
 @import url(components/avatar.css);
 @import url(components/list-group.css);
 @import url(components/button.css);
@@ -17,7 +10,6 @@
 @import url(components/tag.css);
 @import url(components/navigation.css);
 @import url(components/card.css);
-@import url(components/sidebar.css);
 @import url(components/navbar.css);
 @import url(components/accordion.css);
 @import url(components/popover.css);
@@ -26,9 +18,6 @@
 @import url(components/stepper.css);
 @import url(components/tabs.css);
 
-/*************************************************/
-/******************* UTILITIES *******************/
-/*************************************************/
 @import url(utilities/color.css);
 @import url(utilities/container.css);
 @import url(utilities/display.css);

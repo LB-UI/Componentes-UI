@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/src/assets/favicon.ico" type="image/x-icon">
     <title>LayBlu UI</title>
@@ -11,109 +10,116 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="./js/components/sidebar.js"></script>
 </head>
 
 <body>
-    <aside class="sidebar sidebar--icon">
-        <a href="./" class="sidebar__header">
-            <img class="sidebar__image" src="./assets/favicon.ico" alt="Logo de LayBlu">
-            <span class="sidebar__brand">LayBlu UI</span>
-        </a>
+    <div class="root">
 
-        <ul class="sidebar__content">
-            <li class="sidebar__item">
-                <label class="sidebar__search">
-                    <span class="sidebar__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                    <input class="sidebar__input" type="search" placeholder="Buscar">  
-                </label>
-            </li>
-            <li class="sidebar__item">
-                <a class="sidebar__link" href="./dashboard.html">
-                    <span class="sidebar__icon"><i class="fa-solid fa-gauge"></i></span>
-                    <span class="sidebar__text">Dashboard</span>
-                </a>
-            </li>
-            <li class="sidebar__item">
-                <a class="sidebar__link" href="./documentacion.html">
-                    <span class="sidebar__icon"><i class="fa-solid fa-book"></i></span>
-                    <span class="sidebar__text">Documentación</span>
-                </a>
-            </li>
-            <li class="sidebar__item">
-                <a class="sidebar__link" href="./iconos.html">
-                    <span class="sidebar__icon"><i class="fa-solid fa-icons"></i></span>
-                    <span class="sidebar__text">Iconos</span>
-                </a>
-            </li>
-            <li class="sidebar__item">
-                <button class="sidebar__link sidebar__link--dropdown" data-dropdown="show">
-                    <span class="sidebar__icon"><i class="fa-solid fa-cubes"></i></span>
-                    <span class="sidebar__text">Componentes</span>
-                    <span class="sidebar__caret"><i class="fa-solid fa-angle-down"></i></span>
-                </button>
-                <ul class="sidebar__dropdown">
-                    <li class="sidebar__item">
-                        <a class="sidebar__link" href="./alert.html">
-                            <span class="sidebar__icon sidebar__icon--line"></span>
-                            <span class="sidebar__text">Alert</span>
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a class="sidebar__link" href="./avatar.html">
-                            <span class="sidebar__icon sidebar__icon--line"></span>
-                            <span class="sidebar__text">Avatar</span>
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a class="sidebar__link" href="./accordion.html">
-                            <span class="sidebar__icon sidebar__icon--line"></span>
-                            <span class="sidebar__text">Accordion</span>
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a class="sidebar__link" href="./badge.html">
-                            <span class="sidebar__icon sidebar__icon--line"></span>
-                            <span class="sidebar__text">Badge</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="sidebar__item">
-                <button class="sidebar__link sidebar__link--dropdown" data-dropdown="show">
-                    <span class="sidebar__icon"><i class="fa-solid fa-layer-group"></i></span>
-                    <span class="sidebar__text">Librerias</span>
-                    <span class="sidebar__caret"><i class="fa-solid fa-angle-down"></i></span>
-                </button>
-                <ul class="sidebar__dropdown">
-                    <li class="sidebar__item">
-                        <a class="sidebar__link" href="./alert.html">
-                            <span class="sidebar__icon sidebar__icon--line"></span>
-                            <span class="sidebar__text">CodeMirror</span>
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a class="sidebar__link" href="./avatar.html">
-                            <span class="sidebar__icon sidebar__icon--line"></span>
-                            <span class="sidebar__text">FullCalendar</span>
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a class="sidebar__link" href="./accordion.html">
-                            <span class="sidebar__icon sidebar__icon--line"></span>
-                            <span class="sidebar__text">Sortable JS</span>
-                        </a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a class="sidebar__link" href="./badge.html">
-                            <span class="sidebar__icon sidebar__icon--line"></span>
-                            <span class="sidebar__text">PDF Maker</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </aside>
+        <aside class="sidebar sidebar--full" id="sidebar">
+            <a href="./" class="sidebar__header">
+                <img class="sidebar__image" src="./assets/favicon.ico" alt="Logo de LayBlu">
+                <span class="sidebar__brand">LayBlu UI</span>
+            </a>
+    
+            <ul class="sidebar__content">
+                <li class="sidebar__item">
+                    <label class="sidebar__search">
+                        <span class="sidebar__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input class="sidebar__input" type="search" placeholder="Buscar">  
+                    </label>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="./dashboard.html">
+                        <span class="sidebar__icon"><i class="fa-solid fa-gauge"></i></span>
+                        <span class="sidebar__text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="./documentacion.html">
+                        <span class="sidebar__icon"><i class="fa-solid fa-book"></i></span>
+                        <span class="sidebar__text">Documentación</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="./iconos.html">
+                        <span class="sidebar__icon"><i class="fa-solid fa-icons"></i></span>
+                        <span class="sidebar__text">Iconos</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <button class="sidebar__link sidebar__link--dropdown" data-dropdown="show">
+                        <span class="sidebar__icon"><i class="fa-solid fa-cubes"></i></span>
+                        <span class="sidebar__text">Componentes</span>
+                        <span class="sidebar__caret"><i class="fa-solid fa-angle-down"></i></span>
+                    </button>
+                    <ul class="sidebar__dropdown">
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="./alert.html">
+                                <span class="sidebar__icon sidebar__icon--line"></span>
+                                <span class="sidebar__text">Alert</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="./avatar.html">
+                                <span class="sidebar__icon sidebar__icon--line"></span>
+                                <span class="sidebar__text">Avatar</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="./accordion.html">
+                                <span class="sidebar__icon sidebar__icon--line"></span>
+                                <span class="sidebar__text">Accordion</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="./badge.html">
+                                <span class="sidebar__icon sidebar__icon--line"></span>
+                                <span class="sidebar__text">Badge</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar__item">
+                    <button class="sidebar__link sidebar__link--dropdown" data-dropdown="show">
+                        <span class="sidebar__icon"><i class="fa-solid fa-layer-group"></i></span>
+                        <span class="sidebar__text">Librerias</span>
+                        <span class="sidebar__caret"><i class="fa-solid fa-angle-down"></i></span>
+                    </button>
+                    <ul class="sidebar__dropdown">
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="./alert.html">
+                                <span class="sidebar__icon sidebar__icon--line"></span>
+                                <span class="sidebar__text">CodeMirror</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="./avatar.html">
+                                <span class="sidebar__icon sidebar__icon--line"></span>
+                                <span class="sidebar__text">FullCalendar</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="./accordion.html">
+                                <span class="sidebar__icon sidebar__icon--line"></span>
+                                <span class="sidebar__text">Sortable JS</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="./badge.html">
+                                <span class="sidebar__icon sidebar__icon--line"></span>
+                                <span class="sidebar__text">PDF Maker</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <main class="wrapper" id="wrapper">
+            <div class="container-lg">
+                <h1>Hola Mundo Como estasn todos</h1>
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>
