@@ -11,7 +11,7 @@
   font-family: var(--title-font-family);
   font-size: var(--font-size-md);
   line-height: 1.3;
-  font-weight: 600;
+  font-weight: 700;
 
   color: var(--gray-iron-500);
   padding: .6rem 1.2rem;
@@ -58,7 +58,7 @@
 .list-article__title{
   font-family: var(--title-font-family);
   line-height: var(--title-line-height);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--gray-iron-500);
 
   display: -webkit-box;

@@ -1,53 +1,127 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
-  *,
-  *::after,
-  *::before {
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 10px;
-  }
-  body {
-    font-family: var(--text-font-family);
-    font-size: var(--text-font-size);
-    font-weight: var(--text-font-weight);
-    line-height: var(--text-line-height);
-  
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-    font-family: var(--title-font-family);
-    font-weight: var(--title-font-weight);
-    line-height: var(--title-line-height);
-  }
-  ul,
-  ol{
-      margin: 0;
-      padding-left: 0;
-      list-style: none;
-  }
-  a{
-      text-decoration: none;
-      -webkit-tap-highlight-color: transparent;
-  }
-  a:active,
-  a:hover{
-    color: inherit;
-  }
-  button{
-    -webkit-tap-highlight-color: transparent;
-  }
-  figure, p, code, article{
-    margin: 0;
-  }
-  input:focus{
-    outline: 0;
-  }
+html {
+  font-size: 10px;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: var(--text-font-family);
+  font-size: var(--text-font-size);
+  font-weight: var(--text-font-weight);
+  line-height: var(--text-line-height);
+
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: var(--title-font-family);
+  font-weight: var(--title-font-weight);
+  line-height: var(--title-line-height);
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  color: inherit;
+}
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+figure,
+p,
+code,
+article {
+  margin: 0;
+}
+input:focus {
+  outline: 0;
+}
+code,
+kbd,
+samp,
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+main,
+section,
+aside {
+  display: block;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+img {
+  border-style: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: none;
+  text-transform: none;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+progress {
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
