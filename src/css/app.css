@@ -17,6 +17,8 @@
 @import url(components/timeline.css);
 @import url(components/stepper.css);
 @import url(components/tabs.css);
+@import url(components/sidebar.css);
+@import url(components/table.css);
 
 @import url(utilities/color.css);
 @import url(utilities/container.css);
