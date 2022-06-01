@@ -1,6 +1,6 @@
 /* == Shared == */
-.inputBorder, 
-.inputFloat {
+.input-border, 
+.input-float {
   color: var(--neutral-500);
   background-color: var(--white); 
   display: flex;
@@ -8,8 +8,8 @@
   gap: .5rem;
 }
 
-.inputBorder__inputBox,
-.inputFloat__inputBox {
+.input-border__inputBox,
+.input-float__inputBox {
   width: 100%;
   border: 1px solid var(--neutral-300);
   border-radius: var(--border-radius);
@@ -18,8 +18,8 @@
   position: relative;
 }
 
-.inputBorder__input,
-.inputFloat__input {
+.input-border__input,
+.input-float__input {
   padding: 1rem 1.2rem;
   flex: 1;
   border: none;
@@ -29,27 +29,27 @@
   background-color: transparent;
 }
 
-.inputBorder__description,
-.inputFloat__description {
+.input-border__description,
+.input-float__description {
   font-size: 1.2rem;
 }
 
 /* === input text -- border === */
 
 
-.inputBorder__i {
+.input-border__i {
   padding: 1rem 1.5rem;
   color: var(--neutral-400);
 }
 
 
-.inputBorder__input::placeholder {
+.input-border__input::placeholder {
   color: var(--neutral-300);
 }
 
 /* === input text -- float === */
 
-.inputFloat__label {
+.input-float__label {
   position: absolute;
   top: 50%;
   left: 1rem;
@@ -63,8 +63,8 @@
   transition: transform var(--transition), font-size var(--transition);
 }
 
-.inputFloat:hover .inputFloat__label,
-.inputFloat__input:focus + .inputFloat__label {
+.input-float:hover .input-float__label,
+.input-float__input:focus + .input-float__label {
   transform: translateY(-150%);
   font-size: var(--font-size-md);
 }
