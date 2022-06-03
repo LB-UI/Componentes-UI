@@ -22,6 +22,7 @@
 @import url(components/sidebar.css);
 @import url(components/table.css);
 @import url(components/slider.css);
+@import url(components/progressBar.css);
 
 @import url(utilities/color.css);
 @import url(utilities/container.css);
