@@ -17,6 +17,9 @@
 @import url(components/timeline.css);
 @import url(components/stepper.css);
 @import url(components/tabs.css);
+
+@import url(components/inputs.css);
+@import url(components/checkbox.css);
 @import url(components/sidebar.css);
 @import url(components/table.css);
 

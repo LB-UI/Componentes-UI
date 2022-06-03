@@ -1,0 +1,70 @@
+/* == Shared == */
+.input-border, 
+.input-float {
+  color: var(--neutral-500);
+  background-color: var(--white); 
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.input-border__inputBox,
+.input-float__inputBox {
+  width: 100%;
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input-border__input,
+.input-float__input {
+  padding: 1rem 1.2rem;
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: var(--font-size-lg);
+  color: var(--neutral-500);
+  background-color: transparent;
+}
+
+.input-border__description,
+.input-float__description {
+  font-size: 1.2rem;
+}
+
+/* === input text -- border === */
+
+
+.input-border__i {
+  padding: 1rem 1.5rem;
+  color: var(--neutral-400);
+}
+
+
+.input-border__input::placeholder {
+  color: var(--neutral-300);
+}
+
+/* === input text -- float === */
+
+.input-float__label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  z-index: 1;
+
+  transform: translateY(-50%);
+  font-size: var(--font-size-lg);
+  cursor: text;
+  line-height: 2.24rem;
+  background-color: var(--white);
+  transition: transform var(--transition), font-size var(--transition);
+}
+
+.input-float:hover .input-float__label,
+.input-float__input:focus + .input-float__label {
+  transform: translateY(-150%);
+  font-size: var(--font-size-md);
+}

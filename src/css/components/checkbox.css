@@ -1,0 +1,13 @@
+.checkbox, .circle-checkbox {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--neutral-500);
+  border: none;
+  outline: none;
+}
+
+.checkbox:active, .circle-checkbox:active {
+  color: var(--neutral-900);
+}
