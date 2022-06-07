@@ -1,0 +1,116 @@
+.select {
+  /* background-color: #eee; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.select i {
+  color: var(--neutral-400);
+}
+
+/* button */
+.select__btn {
+  width: 100%;
+  height: 4.6rem;
+  border: 1px solid var(--neutral-300);
+  outline: none;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  padding: 0;
+  transition: background-color var(--transition);
+}
+
+.select__btn:hover {background-color: var(--neutral-50);}
+.select__btn:active {background-color: var(--neutral-100);}
+
+.select__placeholder {
+  display: block;
+  height: 100%;
+  text-align: left;
+  vertical-align: center;
+  flex: 1;
+  padding: 1rem 1.2rem;
+  font-size: var(--font-size-lg);
+  color: var(--neutral-500);
+
+  display: flex;
+  align-items: center;
+}
+
+.select[data-value='null'] .select__placeholder {
+  color: var(--neutral-300);
+}
+
+.select__icon,
+.select__oc-arrow {
+  width: 4.6rem; 
+  height: 100%; 
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform var(--transition);
+}
+
+
+/* -- Content -- */
+
+.select__content {
+  display: none;
+  width: 100%;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--neutral-300);
+}
+
+.select__search {
+  padding: 1.6rem;
+  border-radius: var(--border-radius);
+}
+
+/* options */
+.select__option {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .6rem 1.6rem;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.select__option--selected {
+  background-color: var(--gray-iron-50);
+}
+
+.select__opt-icon,
+.select__opt-value {
+  padding: .5rem;
+  transition: color var(--transition);
+}
+
+.select__opt-value {
+  color: var(--neutral-500);
+}
+
+.select__option:hover .select__opt-icon,
+.select__option:hover .select__opt-value {
+  color: var(--neutral-700);
+}
+
+.select__option:last-child {
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+/* == Open state == */
+.select--open .select__content {
+  display: block;
+}
+
+.select--open .select__oc-arrow {
+  transform: rotate(180deg);
+}
