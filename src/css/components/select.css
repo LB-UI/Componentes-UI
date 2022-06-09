@@ -35,7 +35,7 @@
   vertical-align: center;
   flex: 1;
   padding: 1rem 1.2rem;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   color: var(--neutral-500);
 
   display: flex;
