@@ -1,0 +1,26 @@
+.slider__range {
+  height: .5rem;
+  appearance: none;
+  outline: none;
+  border-radius: 5rem;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    var(--france-500) 50%,
+    var(--france-100) 50%
+  );
+}
+
+.slider__range::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 5rem;
+  background-color: var(--france-500);
+  cursor: pointer;
+  transition: box-shadow var(--transition);
+}
+
+.slider__range::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 5px var(--france\/20);
+}
