@@ -33,7 +33,7 @@
 
 /* options */
 .select-float__option {
-  display: flex;
+  display: none;
   align-items: center;
   gap: .6rem;
   padding: .6rem 1.6rem;
@@ -43,6 +43,16 @@
 
 .select-float__option--selected {
   background-color: var(--gray-iron-50);
+}
+
+.select-float__option--filtered {
+  display: flex;
+}
+
+.select-float__nomatches {
+  display: none;
+  padding: .6rem 1.6rem;
+  color: var(--bermellon-500);
 }
 
 .select-float__opt-icon,
