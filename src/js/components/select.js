@@ -64,8 +64,6 @@ const searchOption = (input) => {
       match.style.display = 'flex';
     });
   }
-  
-  console.log(matches);
 
 }
 
