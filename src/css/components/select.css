@@ -73,6 +73,12 @@
   border-radius: var(--border-radius);
 }
 
+.select__nomatches {
+  display: none;
+  padding: .6rem 1.6rem;
+  color: var(--bermellon-500);
+}
+
 /* options */
 .select__option {
   display: flex;

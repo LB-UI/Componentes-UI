@@ -1,0 +1,28 @@
+#loader {
+  animation: loadding1 1s ease-in alternate infinite;
+}
+
+.line {
+  transform-origin: center;
+  animation: loadding 1s alternate ease-in infinite;
+}
+
+@keyframes loadding {
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes loadding1 {
+  to{
+    opacity: 0;
+  } 
+  from {
+    opacity: 1;
+  }
+}
